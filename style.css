@@ -1,40 +1,39 @@
 :root {
   /* Primary Colors */
-  --color-green: #4CAF4F;
-  --color-green-dark: #388E3B;
-
+  --color-green: #28CB8B;
+  --color-green-dark: #20A874;
+ 
   /* Neutral Colors */
   --color-dark: #263238;
   --color-text-body: #717171;
   --color-white: #FFFFFF;
-
+ 
   /* Background Colors */
-  --color-bg-main: #F5F7FA;
   --color-bg-hero: #F5F7FA;
   --color-bg-alt: #F5F7FA;
   --color-footer-bg: #263238;
-
+ 
   /* Border */
   --color-border: #E5E7EB;
-
+ 
   /* Typography */
-  --font-heading: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
 }
-
+ 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-
+ 
 body{
     font-family:var(--font-body);
     color:var(--color-dark);
     background:var(--color-white);
     overflow-x:hidden;
 }
-
+ 
 h1,
 h2,
 h3,
@@ -44,23 +43,23 @@ h5{
     font-weight:600;
     color:var(--color-dark);
 }
-
+ 
 a{
     text-decoration:none;
     transition:.3s ease;
 }
-
+ 
 .text-accent{
     color:var(--color-green);
 }
-
+ 
 .section-title{
     font-size:36px;
     font-weight:600;
     line-height:44px;
     margin-bottom:16px;
 }
-
+ 
 .section-subtitle{
     color:var(--color-text-body);
     font-size:16px;
@@ -68,7 +67,7 @@ a{
     max-width:540px;
     margin:0 auto 32px;
 }
-
+ 
 .body-text{
     color:var(--color-text-body);
     font-size:14px;
@@ -102,20 +101,16 @@ a{
 }
  
 .navbar-brand {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.35rem;
-  color: var(--color-dark);
   display: flex;
   align-items: center;
 }
-
+ 
 .navbar-brand img{
   height: 24px;
   width: auto;
   display: block;
 }
-
+ 
 .nav-link {
   color: var(--color-dark);
   font-weight: 500;
@@ -241,7 +236,7 @@ a{
     justify-content: center;
     align-items: center;
 }
-
+ 
 .feature-image img{
     width: 100%;
     max-width: 440px;  
@@ -306,21 +301,6 @@ a{
   padding: 5rem 0;
 }
  
-.testimonial-logo-tile {
-  aspect-ratio: 1;
-  background-color: var(--color-dark);
-  border-radius: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.testimonial-logo-tile i {
-  font-size: 4rem;
-  color: var(--color-green);
-}
- 
 .testimonial-text {
   font-size: 1.05rem;
   color: var(--color-text-body);
@@ -381,7 +361,7 @@ a{
     overflow:hidden;
     border-radius:12px;
 }
-
+ 
 .blog-image img{
     width:100%;
     height:286px;
@@ -394,14 +374,14 @@ a{
     min-height: 170px;          /* same height for every card */
     margin: -70px auto 0;
     padding: 20px;
-
+ 
     background: #F5F7FA;
     border-radius: 12px;
     box-shadow: 0px 8px 24px rgba(171, 190, 209, 0.25);
-
+ 
     position: relative;
     z-index: 2;
-
+ 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -421,9 +401,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-
+ 
     gap: 8px;
-
+ 
     color: var(--color-green);
     font-weight: 600;
     text-decoration: none;
@@ -452,10 +432,6 @@ a{
 }
  
 .footer-brand {
-  font-family: var(--font-heading);
-  font-weight: 700;
-  font-size: 1.35rem;
-  color: #fff;
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
@@ -514,32 +490,32 @@ a{
 .newsletter-box{
     width:255px;
     height:40px;
-
+ 
     background:rgba(255,255,255,0.20);
-
+ 
     border-radius:8px;
-
+ 
     display:flex;
     align-items:center;
     justify-content:space-between;
-
+ 
     padding:0 12px;
 }
  
 .newsletter-box input{
     flex:1;
-
+ 
     background:transparent;
     border:none;
     outline:none;
-
+ 
     color:#fff;
     font-size:14px;
     font-weight:400;
-
+ 
     padding:0;
 }
-
+ 
 .newsletter-box input::placeholder{
     color:rgba(255,255,255,.60);
 }
@@ -548,20 +524,20 @@ a{
     background:transparent;
     border:none;
     color:#fff;
-
+ 
     display:flex;
     align-items:center;
     justify-content:center;
-
+ 
     cursor:pointer;
-
+ 
     padding:0;
 }
-
+ 
 .newsletter-box button i{
     font-size:18px;
 }
-
+ 
 .newsletter-box button:hover{
   color: var(--color-green);
 }
@@ -607,5 +583,11 @@ a{
   .cta-section h2 {
     font-size: 1.6rem;
   }
-
+ 
+  .newsletter-box{
+    width: 100%;
+    max-width: 320px;
+  }
+ 
 }
+ 
